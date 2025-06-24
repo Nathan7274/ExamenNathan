@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: violet;
+}
+
+.header, .footer {
+  width: 60%;
+  margin: auto;
+  padding: 20px;
+}
+
+.main {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+}
+
+.menu {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.avis-bloc {
+  border: 1px dotted #333;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 0 10px;
+  background-color: pink;
+}
+
+.menu a {
+  padding: 15px;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #333;
+}
+
+.menu .icon {
+  display: none;
+  margin-right: 8px;
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+.logo {
+    width: 200px;
+}
+
+.title-block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-family: cursive;
+  text-decoration: underline;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-decoration: underline double;
+}
+
+h4 {
+  font-size: 0.8em;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+p {
+  text-align: justify;
+}
+
+.main p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.avis {
+    flex: 1 1 30%;
+    max-width: 350px;
+}
+
+.jeux {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.liste-jeux {
+    flex: 2 1 90%;
+}
+
+.produit {
+  width: 200px;
+  margin: 10px;
+  padding: 20px 10px;
+  border: 1px dashed #000000;
+  text-align: center;
+  background-color: pink;
+}
+
+.produit img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer {
+  margin-top: 20px;
+  background: url('IMG/background.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  color: whitesmoke;
+}
+
+.footer a {
+  font-size: 0.9em;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.footer ol {
+  color: whitesmoke;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .jeux {
+    justify-content: center;
+  }
+
+  .header, .footer {
+    width: 100%;
+  }
+
+  .menu .icon {
+    display: inline-block;
+  }
+
+  .menu-txt {
+    display: none;
+  }
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem; 
+    align-items: flex-start; 
+}
